@@ -1,20 +1,13 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Enumerable
 
 > Description the project.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby
 
 ## Getting Started
 
@@ -40,17 +33,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Bereket Retta**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@bereketRetta](https://github.com/bereketretta)
+- Twitter: [@bekiopia](https://twitter.com/bekiopia)
+- LinkedIn: [BereketRetta](https://linkedin.com/in/bereket-retta)
 
-👤 **Author2**
+👤 **Verissimo Francis**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/VTY1999)
+- Twitter: [@twitterhandle](https://twitter.com/verissimoty?s=09)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/francis-o-verissimo/)
 
 ## 🤝 Contributing
 

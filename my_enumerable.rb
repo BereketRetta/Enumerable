@@ -1,35 +1,39 @@
 module MyEnumerable
-    def list
-      @list ||= []
-    end
-  
-    def all?
-      return unless block_given?
-  
-      response = true
-      list.each do |element|
-        response = false unless yield element
-      end
-      response
-    end
-  
-    def any?
-      return unless block_given?
-  
-      response = false
-      list.each do |element|
-        response = true if yield element
-      end
-      response
-    end
-  
-    def filter
-      return unless block_given?
-  
-      arr = []
-      list.each do |element|
-        arr.push(element) if yield element
-      end
-      arr
-    end
+  def all?
+    each { |n| return false unless yield(n) }
+    true
   end
+
+  def any?
+    each { |n| return true if yield(n) }
+    false
+  end
+
+  def filter
+    arr = []
+    each { |n| arr.push(n) if yield(n) }
+    arr
+  end
+
+  def max
+    max = 0
+    each { |n| max = n if n > max }
+    max
+  end
+
+  def min
+    min = +1.0 / 0.0
+    each { |n| min = n if n < min }
+    min
+  end
+
+  def sort
+    sorted = []
+    newlist = @list.dup
+    (1..newlist.count).each do |_x|
+      sorted.push(newlist.min)
+      newlist.delete(newlist.min)
+    end
+    sorted
+  end
+end

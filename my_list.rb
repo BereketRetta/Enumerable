@@ -14,14 +14,3 @@ class MyList
     end
   end
 end
-
-list = MyList.new(1, 2, 3, 4)
-print(list.all? { |e| e < 5 })
-print "\n"
-print(list.all? { |e| e > 5 })
-print "\n"
-print(list.any? { |e| e == 2 })
-print "\n"
-print(list.any? { |e| e == 5 })
-print "\n"
-print(list.filter(&:even?))

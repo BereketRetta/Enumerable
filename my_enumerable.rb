@@ -7,8 +7,8 @@ module MyEnumerable
     return unless block_given?
 
     response = true
-    list.each do |element|
-      response = false unless yield element
+    list.each do |e|
+      response = false unless yield e
     end
     response
   end
@@ -17,8 +17,8 @@ module MyEnumerable
     return unless block_given?
 
     response = false
-    list.each do |element|
-      response = true if yield element
+    list.each do |e|
+      response = true if yield e
     end
     response
   end
@@ -27,8 +27,8 @@ module MyEnumerable
     return unless block_given?
 
     arr = []
-    list.each do |element|
-      arr.push(element) if yield element
+    list.each do |e|
+      arr.push(e) if yield e
     end
     arr
   end
